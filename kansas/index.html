@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<base href="https://ankit013002.github.io/holdback-web/" />
+<title>Kansas Self-Employment Tax Calculator (2026) — 1099 Set-Aside | Holdback</title>
+<meta name="description" content="How much should a self-employed / 1099 worker in Kansas set aside for taxes in 2026? Free calculator: self-employment tax, federal income tax, and Kansas income tax." />
+<link rel="canonical" href="https://ankit013002.github.io/holdback-web/kansas/" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Kansas Self-Employment Tax Calculator (2026) — 1099 Set-Aside | Holdback" />
+<meta property="og:description" content="How much should a self-employed / 1099 worker in Kansas set aside for taxes in 2026? Free calculator: self-employment tax, federal income tax, and Kansas income tax." />
+<meta property="og:url" content="https://ankit013002.github.io/holdback-web/kansas/" />
+<meta name="twitter:card" content="summary" />
+<style>
+  :root{--ink:#16181d;--ink-2:#3d4149;--muted:#6b7280;--line:#e6e7ea;--bg:#faf9f7;
+    --surface:#fff;--accent:#1f6f5c;--accent-ink:#0f3b31;
+    --shadow:0 1px 2px rgba(20,22,28,.05),0 8px 24px rgba(20,22,28,.06)}
+  *{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font:16px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+  .wrap{max-width:720px;margin:0 auto;padding:28px 20px 72px}
+  a{color:var(--accent-ink)}
+  .brand{font-weight:700;letter-spacing:-.01em;font-size:15px;color:var(--ink-2)}
+  .brand a{color:inherit;text-decoration:none}
+  .crumb{font-size:13px;color:var(--muted);margin:6px 0 0}
+  h1{font-size:clamp(27px,5vw,38px);line-height:1.14;letter-spacing:-.02em;margin:.45em 0 .3em}
+  .sub{color:var(--ink-2);font-size:16.5px;margin:0 0 4px;max-width:56ch}
+  .card{background:var(--surface);border:1px solid var(--line);border-radius:16px;
+    box-shadow:var(--shadow);padding:22px;margin:22px 0}
+  .field{margin:0 0 16px}.field:last-child{margin-bottom:0}
+  label{display:block;font-weight:600;font-size:14px;margin-bottom:6px}
+  .hint{color:var(--muted);font-weight:400;font-size:12.5px}
+  input,select{width:100%;font-size:16px;padding:11px 12px;border:1px solid var(--line);
+    border-radius:10px;background:#fff;color:var(--ink);appearance:none}
+  input:focus,select:focus{outline:2px solid var(--accent);outline-offset:1px;border-color:var(--accent)}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  @media(max-width:520px){.grid{grid-template-columns:1fr}}
+  .result{background:var(--accent-ink);color:#fff;border-radius:16px;padding:24px;margin:22px 0}
+  .result[data-empty]{background:#f2f3f4;color:var(--ink-2)}
+  .rate{font-size:clamp(44px,10vw,64px);line-height:1;font-weight:750;letter-spacing:-.03em}
+  .result[data-empty] .rate{color:var(--muted)}
+  .per100{font-size:15.5px;margin-top:10px;opacity:.92}
+  .breakdown{margin-top:18px;border-top:1px solid rgba(255,255,255,.16);padding-top:6px}
+  .result[data-empty] .breakdown{border-color:var(--line)}
+  .row{display:flex;justify-content:space-between;gap:12px;padding:7px 0;font-size:14.5px;
+    border-bottom:1px solid rgba(255,255,255,.1)}
+  .row.total{font-weight:700;border-bottom:0;padding-top:10px}
+  .cta{display:block;text-align:center;background:var(--accent);color:#fff;text-decoration:none;
+    font-weight:650;font-size:16px;padding:14px 18px;border-radius:12px;margin:8px 0 4px}
+  .cta:hover{background:#1a5f50}
+  .cta small{display:block;font-weight:400;opacity:.85;font-size:12.5px;margin-top:2px}
+  .notes{list-style:none;padding:0;margin:14px 0 0;color:var(--muted);font-size:12.5px}
+  .notes li{padding:3px 0 3px 16px;position:relative}
+  .notes li::before{content:"•";position:absolute;left:2px;color:var(--accent)}
+  .factbox{background:#fff;border:1px solid var(--line);border-left:3px solid var(--accent);
+    border-radius:12px;padding:16px 18px;margin:20px 0}
+  .factbox p{margin:0 0 8px}.factbox p:last-child{margin:0}
+  h2{font-size:21px;letter-spacing:-.01em;margin:34px 0 6px}
+  .faq dt{font-weight:650;margin-top:16px}.faq dd{margin:4px 0 0;color:var(--ink-2)}
+  .states{columns:3;column-gap:18px;font-size:14.5px;margin:12px 0 0;padding:0;list-style:none}
+  @media(max-width:520px){.states{columns:2}}
+  .states li{padding:3px 0;break-inside:avoid}
+  footer{margin-top:44px;color:var(--muted);font-size:12.5px;border-top:1px solid var(--line);padding-top:18px}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="brand"><a href="">Holdback</a></div>
+    <div class="crumb"><a href="">Self-employed tax calculator</a> › Kansas</div>
+    <h1>Kansas self-employment tax calculator (2026)</h1>
+    <p class="sub">Kansas taxes income, so your set-aside includes Kansas state income tax on top of federal self-employment and income tax. Enter your expected income to see how much of each 1099 payment to set aside.</p>
+  </header>
+  <main>
+    <div class="factbox"><p>Kansas levies a state income tax, so a self-employed resident sets aside for three things: federal <strong>self-employment tax</strong>, <strong>federal income tax</strong>, and <strong>Kansas income tax</strong>.</p><p>A single filer with $60,000 of net profit in Kansas should set aside about <strong>24%</strong> — roughly $14,349 for 2026 ($8,478 self-employment tax, $3,559 federal income tax, $2,312 Kansas income tax).</p></div>
+    
+    <div class="card">
+      <div class="field">
+        <label for="profit">Expected net self-employment profit (2026)
+          <span class="hint">— gross income minus business expenses, for the whole year</span>
+        </label>
+        <input id="profit" inputmode="numeric" placeholder="$60,000" autocomplete="off" />
+      </div>
+      <div class="grid">
+        <div class="field"><label for="filing">Filing status</label><select id="filing"></select></div>
+        <div class="field"><label for="state">State</label><select id="state"></select></div>
+      </div>
+      <div class="field">
+        <label for="other">Other household income <span class="hint">— optional; W-2 wages, spouse income, interest</span></label>
+        <input id="other" inputmode="numeric" placeholder="$0" autocomplete="off" />
+      </div>
+    </div>
+    <section id="result" class="result" data-empty aria-live="polite">
+      <div class="rate" id="rate">—</div>
+      <div class="per100" id="per100">Enter your expected net profit to see your number.</div>
+      <div class="breakdown" id="breakdown"></div>
+      <ul class="notes" id="notes"></ul>
+    </section>
+    <a class="cta" href="https://apps.apple.com/us/app/holdback-1099-tax-set-aside/id6809992158">
+      Get Holdback for iPhone
+      <small>Recalculates on every payment you log and reminds you before each quarterly deadline</small>
+    </a>
+    <h2>How much should a self-employed Kansas resident set aside?</h2>
+    <p class="sub" style="max-width:none">Every self-employed person pays <strong>self-employment tax</strong> (Social Security + Medicare, ~15.3% of net earnings) plus <strong>federal income tax</strong> and <strong>Kansas income tax</strong>. The calculator above adds these for your income, filing status, and applies the standard and QBI deductions where they apply.</p>
+    <h2>Common questions</h2>
+    <dl class="faq">
+      <dt>Does Kansas tax self-employment income?</dt>
+      <dd>Yes — Kansas taxes income, so a self-employed resident owes Kansas income tax in addition to federal self-employment and income tax.</dd>
+      <dt>What percent should I set aside for taxes in Kansas?</dt>
+      <dd>It depends on your income and filing status. For a single filer earning $60,000 it is roughly 24%. Use the calculator above for your exact number.</dd>
+      <dt>When are quarterly estimated taxes due?</dt>
+      <dd>Around April 15, June 15, September 15, and January 15. Holdback reminds you before each deadline.</dd>
+    </dl>
+    <h2>Other states</h2><ul class="states"><li><a href="alabama/">Alabama</a></li><li><a href="alaska/">Alaska</a></li><li><a href="arizona/">Arizona</a></li><li><a href="arkansas/">Arkansas</a></li><li><a href="california/">California</a></li><li><a href="colorado/">Colorado</a></li><li><a href="connecticut/">Connecticut</a></li><li><a href="delaware/">Delaware</a></li><li><a href="district-of-columbia/">District of Columbia</a></li><li><a href="florida/">Florida</a></li><li><a href="georgia/">Georgia</a></li><li><a href="hawaii/">Hawaii</a></li><li><a href="idaho/">Idaho</a></li><li><a href="illinois/">Illinois</a></li><li><a href="indiana/">Indiana</a></li><li><a href="iowa/">Iowa</a></li><li><a href="kentucky/">Kentucky</a></li><li><a href="louisiana/">Louisiana</a></li><li><a href="maine/">Maine</a></li><li><a href="maryland/">Maryland</a></li><li><a href="massachusetts/">Massachusetts</a></li><li><a href="michigan/">Michigan</a></li><li><a href="minnesota/">Minnesota</a></li><li><a href="mississippi/">Mississippi</a></li><li><a href="missouri/">Missouri</a></li><li><a href="montana/">Montana</a></li><li><a href="nebraska/">Nebraska</a></li><li><a href="nevada/">Nevada</a></li><li><a href="new-hampshire/">New Hampshire</a></li><li><a href="new-jersey/">New Jersey</a></li><li><a href="new-mexico/">New Mexico</a></li><li><a href="new-york/">New York</a></li><li><a href="north-carolina/">North Carolina</a></li><li><a href="north-dakota/">North Dakota</a></li><li><a href="ohio/">Ohio</a></li><li><a href="oklahoma/">Oklahoma</a></li><li><a href="oregon/">Oregon</a></li><li><a href="pennsylvania/">Pennsylvania</a></li><li><a href="rhode-island/">Rhode Island</a></li><li><a href="south-carolina/">South Carolina</a></li><li><a href="south-dakota/">South Dakota</a></li><li><a href="tennessee/">Tennessee</a></li><li><a href="texas/">Texas</a></li><li><a href="utah/">Utah</a></li><li><a href="vermont/">Vermont</a></li><li><a href="virginia/">Virginia</a></li><li><a href="washington/">Washington</a></li><li><a href="west-virginia/">West Virginia</a></li><li><a href="wisconsin/">Wisconsin</a></li><li><a href="wyoming/">Wyoming</a></li></ul>
+  </main>
+<footer>Holdback is a tax-planning estimate tool, not a tax advisor, accountant, or filing service, and does not connect to your bank. Estimates only — not tax advice.</footer>
+</div>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Does Kansas tax self-employment income?","acceptedAnswer":{"@type":"Answer","text":"Yes — Kansas taxes income, so a self-employed resident owes Kansas income tax in addition to federal self-employment and income tax."}},{"@type":"Question","name":"What percent should I set aside for taxes in Kansas?","acceptedAnswer":{"@type":"Answer","text":"It depends on your income and filing status. For a single filer earning $60,000 it is roughly 24%. Use a calculator for your exact number."}},{"@type":"Question","name":"When are quarterly estimated taxes due?","acceptedAnswer":{"@type":"Answer","text":"Around April 15, June 15, September 15, and January 15."}}]}</script>
+<script>window.HOLDBACK_STATE="KS";window.HOLDBACK_DEFAULT_PROFIT=60000;</script>
+<script src="app.js"></script>
+</body>
+</html>

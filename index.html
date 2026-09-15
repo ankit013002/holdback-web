@@ -3,33 +3,32 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
+<base href="https://ankit013002.github.io/holdback-web/" />
 <title>Self-Employed Tax Calculator 2026 — How Much to Set Aside (1099) | Holdback</title>
-<meta name="description" content="Free 1099 & self-employed tax calculator. See what percent of each payment to set aside for taxes in 2026 — self-employment tax, federal income tax, and state — with a quarterly estimate. No signup." />
+<meta name="description" content="Free 1099 &amp; self-employed tax calculator. See what percent of each payment to set aside for taxes in 2026 — self-employment tax, federal income tax, and state — with a quarterly estimate. No signup." />
 <link rel="canonical" href="https://ankit013002.github.io/holdback-web/" />
 <meta property="og:type" content="website" />
-<meta property="og:title" content="Self-Employed Tax Calculator 2026 — How Much to Set Aside (1099)" />
-<meta property="og:description" content="See what percent of every 1099 payment to set aside for taxes — self-employment + federal + state. Free, no signup." />
+<meta property="og:title" content="Self-Employed Tax Calculator 2026 — How Much to Set Aside (1099) | Holdback" />
+<meta property="og:description" content="Free 1099 &amp; self-employed tax calculator. See what percent of each payment to set aside for taxes in 2026 — self-employment tax, federal income tax, and state — with a quarterly estimate. No signup." />
 <meta property="og:url" content="https://ankit013002.github.io/holdback-web/" />
 <meta name="twitter:card" content="summary" />
 <style>
-  :root{
-    --ink:#16181d; --ink-2:#3d4149; --muted:#6b7280; --line:#e6e7ea;
-    --bg:#faf9f7; --surface:#ffffff; --accent:#1f6f5c; --accent-ink:#0f3b31;
-    --shadow:0 1px 2px rgba(20,22,28,.05),0 8px 24px rgba(20,22,28,.06);
-  }
-  *{box-sizing:border-box}
-  html{-webkit-text-size-adjust:100%}
+  :root{--ink:#16181d;--ink-2:#3d4149;--muted:#6b7280;--line:#e6e7ea;--bg:#faf9f7;
+    --surface:#fff;--accent:#1f6f5c;--accent-ink:#0f3b31;
+    --shadow:0 1px 2px rgba(20,22,28,.05),0 8px 24px rgba(20,22,28,.06)}
+  *{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
   body{margin:0;background:var(--bg);color:var(--ink);
-    font:16px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;}
-  .wrap{max-width:720px;margin:0 auto;padding:32px 20px 72px}
-  header{margin-bottom:28px}
+    font:16px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+  .wrap{max-width:720px;margin:0 auto;padding:28px 20px 72px}
+  a{color:var(--accent-ink)}
   .brand{font-weight:700;letter-spacing:-.01em;font-size:15px;color:var(--ink-2)}
-  h1{font-size:clamp(28px,5vw,40px);line-height:1.12;letter-spacing:-.02em;margin:.5em 0 .3em}
-  .sub{color:var(--ink-2);font-size:17px;margin:0 0 4px;max-width:52ch}
+  .brand a{color:inherit;text-decoration:none}
+  .crumb{font-size:13px;color:var(--muted);margin:6px 0 0}
+  h1{font-size:clamp(27px,5vw,38px);line-height:1.14;letter-spacing:-.02em;margin:.45em 0 .3em}
+  .sub{color:var(--ink-2);font-size:16.5px;margin:0 0 4px;max-width:56ch}
   .card{background:var(--surface);border:1px solid var(--line);border-radius:16px;
     box-shadow:var(--shadow);padding:22px;margin:22px 0}
-  .field{margin:0 0 16px}
-  .field:last-child{margin-bottom:0}
+  .field{margin:0 0 16px}.field:last-child{margin-bottom:0}
   label{display:block;font-weight:600;font-size:14px;margin-bottom:6px}
   .hint{color:var(--muted);font-weight:400;font-size:12.5px}
   input,select{width:100%;font-size:16px;padding:11px 12px;border:1px solid var(--line);
@@ -54,22 +53,27 @@
   .notes{list-style:none;padding:0;margin:14px 0 0;color:var(--muted);font-size:12.5px}
   .notes li{padding:3px 0 3px 16px;position:relative}
   .notes li::before{content:"•";position:absolute;left:2px;color:var(--accent)}
-  h2{font-size:22px;letter-spacing:-.01em;margin:36px 0 6px}
-  .faq dt{font-weight:650;margin-top:16px}
-  .faq dd{margin:4px 0 0;color:var(--ink-2)}
+  .factbox{background:#fff;border:1px solid var(--line);border-left:3px solid var(--accent);
+    border-radius:12px;padding:16px 18px;margin:20px 0}
+  .factbox p{margin:0 0 8px}.factbox p:last-child{margin:0}
+  h2{font-size:21px;letter-spacing:-.01em;margin:34px 0 6px}
+  .faq dt{font-weight:650;margin-top:16px}.faq dd{margin:4px 0 0;color:var(--ink-2)}
+  .states{columns:3;column-gap:18px;font-size:14.5px;margin:12px 0 0;padding:0;list-style:none}
+  @media(max-width:520px){.states{columns:2}}
+  .states li{padding:3px 0;break-inside:avoid}
   footer{margin-top:44px;color:var(--muted);font-size:12.5px;border-top:1px solid var(--line);padding-top:18px}
-  a{color:var(--accent-ink)}
 </style>
 </head>
 <body>
 <div class="wrap">
+
   <header>
     <div class="brand">Holdback</div>
     <h1>How much should I set aside for taxes?</h1>
     <p class="sub">A free calculator for self-employed and 1099 workers. Enter what you expect to make and see the percent of every payment to move into a tax savings account for 2026.</p>
   </header>
-
   <main>
+    
     <div class="card">
       <div class="field">
         <label for="profit">Expected net self-employment profit (2026)
@@ -78,37 +82,30 @@
         <input id="profit" inputmode="numeric" placeholder="$60,000" autocomplete="off" />
       </div>
       <div class="grid">
-        <div class="field">
-          <label for="filing">Filing status</label>
-          <select id="filing"></select>
-        </div>
-        <div class="field">
-          <label for="state">State</label>
-          <select id="state"></select>
-        </div>
+        <div class="field"><label for="filing">Filing status</label><select id="filing"></select></div>
+        <div class="field"><label for="state">State</label><select id="state"></select></div>
       </div>
       <div class="field">
         <label for="other">Other household income <span class="hint">— optional; W-2 wages, spouse income, interest</span></label>
         <input id="other" inputmode="numeric" placeholder="$0" autocomplete="off" />
       </div>
     </div>
-
     <section id="result" class="result" data-empty aria-live="polite">
       <div class="rate" id="rate">—</div>
       <div class="per100" id="per100">Enter your expected net profit to see your number.</div>
       <div class="breakdown" id="breakdown"></div>
       <ul class="notes" id="notes"></ul>
     </section>
-
-    <a class="cta" id="cta" href="https://apps.apple.com/us/app/holdback-1099-tax-set-aside/id6809992158">
+    <a class="cta" href="https://apps.apple.com/us/app/holdback-1099-tax-set-aside/id6809992158">
       Get Holdback for iPhone
       <small>Recalculates on every payment you log and reminds you before each quarterly deadline</small>
     </a>
-
     <h2>How the estimate works</h2>
     <p class="sub" style="max-width:none">Self-employed people pay <strong>self-employment tax</strong> (Social Security + Medicare, ~15.3% of net earnings) on top of <strong>federal income tax</strong>, and often <strong>state income tax</strong>. Holdback adds these up for your situation and divides by your income to get the share of each payment to hold back. It also applies the standard deduction and the QBI (§199A) deduction where they apply.</p>
-
-    <h2 class="faq-h">Common questions</h2>
+    <h2>Self-employment tax calculator by state</h2>
+    <p class="sub">Pick your state for a version of this calculator with local income tax built in.</p>
+    <ul class="states"><li><a href="alabama/">Alabama</a></li><li><a href="alaska/">Alaska</a></li><li><a href="arizona/">Arizona</a></li><li><a href="arkansas/">Arkansas</a></li><li><a href="california/">California</a></li><li><a href="colorado/">Colorado</a></li><li><a href="connecticut/">Connecticut</a></li><li><a href="delaware/">Delaware</a></li><li><a href="district-of-columbia/">District of Columbia</a></li><li><a href="florida/">Florida</a></li><li><a href="georgia/">Georgia</a></li><li><a href="hawaii/">Hawaii</a></li><li><a href="idaho/">Idaho</a></li><li><a href="illinois/">Illinois</a></li><li><a href="indiana/">Indiana</a></li><li><a href="iowa/">Iowa</a></li><li><a href="kansas/">Kansas</a></li><li><a href="kentucky/">Kentucky</a></li><li><a href="louisiana/">Louisiana</a></li><li><a href="maine/">Maine</a></li><li><a href="maryland/">Maryland</a></li><li><a href="massachusetts/">Massachusetts</a></li><li><a href="michigan/">Michigan</a></li><li><a href="minnesota/">Minnesota</a></li><li><a href="mississippi/">Mississippi</a></li><li><a href="missouri/">Missouri</a></li><li><a href="montana/">Montana</a></li><li><a href="nebraska/">Nebraska</a></li><li><a href="nevada/">Nevada</a></li><li><a href="new-hampshire/">New Hampshire</a></li><li><a href="new-jersey/">New Jersey</a></li><li><a href="new-mexico/">New Mexico</a></li><li><a href="new-york/">New York</a></li><li><a href="north-carolina/">North Carolina</a></li><li><a href="north-dakota/">North Dakota</a></li><li><a href="ohio/">Ohio</a></li><li><a href="oklahoma/">Oklahoma</a></li><li><a href="oregon/">Oregon</a></li><li><a href="pennsylvania/">Pennsylvania</a></li><li><a href="rhode-island/">Rhode Island</a></li><li><a href="south-carolina/">South Carolina</a></li><li><a href="south-dakota/">South Dakota</a></li><li><a href="tennessee/">Tennessee</a></li><li><a href="texas/">Texas</a></li><li><a href="utah/">Utah</a></li><li><a href="vermont/">Vermont</a></li><li><a href="virginia/">Virginia</a></li><li><a href="washington/">Washington</a></li><li><a href="west-virginia/">West Virginia</a></li><li><a href="wisconsin/">Wisconsin</a></li><li><a href="wyoming/">Wyoming</a></li></ul>
+    <h2>Common questions</h2>
     <dl class="faq">
       <dt>What percentage should a 1099 worker save for taxes?</dt>
       <dd>For many self-employed people it lands around 20–30% of net profit, but it depends on your total income, filing status, and state. Use the calculator above for your number rather than a rule of thumb.</dd>
@@ -118,23 +115,10 @@
       <dd>No. Every figure here is an estimate based on what you enter and published 2026 tax figures. Confirm with a qualified tax professional.</dd>
     </dl>
   </main>
-
-  <footer>
-    Holdback is a tax-planning estimate tool, not a tax advisor, accountant, or filing service, and does not connect to your bank. Estimates only — not tax advice.
-  </footer>
+<footer>Holdback is a tax-planning estimate tool, not a tax advisor, accountant, or filing service, and does not connect to your bank. Estimates only — not tax advice.</footer>
 </div>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What percentage should a 1099 worker save for taxes?","acceptedAnswer":{"@type":"Answer","text":"For many self-employed people it lands around 20–30% of net profit, but it depends on total income, filing status, and state. Use a calculator for your specific number."}},{"@type":"Question","name":"Do I have to pay quarterly estimated taxes?","acceptedAnswer":{"@type":"Answer","text":"If you expect to owe $1,000 or more, the IRS generally expects quarterly estimated payments around April 15, June 15, September 15, and January 15."}},{"@type":"Question","name":"Is this tax advice?","acceptedAnswer":{"@type":"Answer","text":"No. Every figure is an estimate based on your inputs and published 2026 tax figures. Confirm with a qualified tax professional."}}]}</script>
 
-<script type="application/ld+json">
-{
-  "@context":"https://schema.org",
-  "@type":"FAQPage",
-  "mainEntity":[
-    {"@type":"Question","name":"What percentage should a 1099 worker save for taxes?","acceptedAnswer":{"@type":"Answer","text":"For many self-employed people it lands around 20–30% of net profit, but it depends on total income, filing status, and state. Use a calculator for your specific number."}},
-    {"@type":"Question","name":"Do I have to pay quarterly estimated taxes?","acceptedAnswer":{"@type":"Answer","text":"If you expect to owe $1,000 or more, the IRS generally expects quarterly estimated payments around April 15, June 15, September 15, and January 15."}},
-    {"@type":"Question","name":"Is this tax advice?","acceptedAnswer":{"@type":"Answer","text":"No. Every figure is an estimate based on your inputs and published 2026 tax figures. Confirm with a qualified tax professional."}}
-  ]
-}
-</script>
-<script src="./app.js"></script>
+<script src="app.js"></script>
 </body>
 </html>
